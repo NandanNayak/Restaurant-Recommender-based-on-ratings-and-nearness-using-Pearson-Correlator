@@ -45,7 +45,7 @@ This is converted into a weighted interval as shown below.</p>
 4: [['K', 6], ['I', 11], ['L', 15], ['B', 18], ['C', 20]], 
 5: [['A', 2]]}</p>
 
-<p>So considering a rating of 4, there are 4 restaurants K,I,L,B and C. Since K has the lowest distance among all the 4 rated restaurants, it has the highest interval i.e. from [0,6] which gives a higher weightage. I gets an interval of [7,11], L gets [12,15], B gets [16,18] and C gets [19,20]. Now a random is generated between 0 and 20. The restaurant is selected based on the interval the random number belongs. In this way, K has the highest probability of getting picked. Therefore this approach favors nearest restaurant.</p>
+<p>So considering a rating of 4, there are 4 restaurants <em>K,I,L,B</em> and <em>C</em>. Since <em>K</em> has the lowest distance among all the 4 rated restaurants, it has the highest interval i.e. from [0,6] which gives a higher weightage. <em>I</em> gets an interval of [7,11], <em>L</em> gets [12,15], <em>B</em> gets [16,18] and <em>C</em> gets [19,20]. Now a random is generated between 0 and 20. The restaurant is selected based on the interval the random number belongs. In this way, <em>K</em> has the highest probability of getting picked. Therefore this approach favors nearest restaurant.</p>
 
 <p>Similarly, the restaurants with high ratings have higher weightage by giving them larger interval. A number is randomly generated between 0 and 20. 5 star restaurants have [0,6] interval, 4 stared one’s have [7,11], 3 stared one’s have [12,15], 2 stared one’s have [16,18] and 1 stared one’s have [19,20] interval. Therefore this approach favors restaurant with high rating.</p>
 
@@ -60,4 +60,4 @@ eg.<strong><em>python nayak_nandan_recommender.py 4</em></strong>
 <h3>Results</h3>
 <p>For the above command, the following graph was generated during one execution.</p>
 <img src="https://github.com/NandanNayak/Restaurant-Recommender-based-on-ratings-and-nearness-using-Pearson-Correlator/blob/master/Graphical_Output.png" />
-<p>The first subplot represents <em>Distance against Restaurants</em>. The second subplot represents <em>Restaurant Ratings against Restaurants</em> and the third subplot represents <em>Frequency of visits against Restaurants</em>. The graph clearly shows that the nearby restaurants with high ratings are highly favored which gets reflected in the higher visits.</p>
+<p>The first subplot represents <em><u>Distance against Restaurants</u></em>. The second subplot represents <em><u>Restaurant Ratings against Restaurants</u></em> and the third subplot represents <em><u>Frequency of visits against Restaurants</u></em>. The graph clearly shows that the nearby restaurants with high ratings are highly favored which gets reflected in the higher visits.</p>
